@@ -1,4 +1,41 @@
-/****** General ***********/
+/*********** Reset ***********/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*********** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -23,6 +60,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: 0 25px;
 }
 
 a {
@@ -58,10 +96,71 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hearder ***********/
-.logo {}
+/*********** Header - Logo ***********/
+header {
 
-/****** Hebergements And Populaires ***********/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+}
+
+.logo {
+    width: 61px;
+    height: 19px;
+}
+
+/*********** Header - Menu  ***********/
+.menu {
+    height: 100%;
+
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul,
+.menu li,
+.menu a {
+    height: 100%;
+}
+
+.menu li {
+    margin-right: 60px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu li:hover {
+    color: #0465fc;
+}
+
+.menu li:hover::before {
+    content: '';
+    /* Ajouter un contenu vide pour créer un pseudo-élément */
+    display: block;
+    /* Rendre le pseudo-élément un bloc pour lui permettre d'avoir une hauteur */
+    width: 100%;
+    /* Largeur du pseudo-élément, par défaut à 100% de la largeur de l'élément parent */
+    border-top: 2px solid;
+    /* Largeur et style du bord supérieur initial */
+    border-top-color: #0465fc;
+    position: absolute;
+}
+
+.menu a {
+    padding: 25px 0;
+}
+
+/*********** Content - Dream vacation ***********/
+h2 {
+    font-weight: 700;
+}
+
+/*********** Content - Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
