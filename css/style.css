@@ -162,7 +162,7 @@ h2 {
 
 .head-line {
     line-height: 30px;
-    margin: 25px 0;
+    margin: 30px 0;
 
 
 }
@@ -172,7 +172,7 @@ h2 {
 .search-bar {
     display: flex;
     align-items: center;
-    margin: 25px 0;
+    margin: 30px 0;
 
 
 }
@@ -229,7 +229,7 @@ form.form::after {
 .location-filters {
     display: flex;
     align-items: center;
-    margin: 25px 0;
+    margin: 30px 0;
 
 }
 
@@ -262,7 +262,7 @@ span.icon-filter {
 
 .info-bar {
     display: flex;
-    margin: 25px 0;
+    margin: 30px 0;
 
 }
 
