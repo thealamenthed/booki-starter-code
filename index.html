@@ -35,7 +35,7 @@
         />
         <nav class="menu">
           <ul>
-            <li><a href="#Hebergements">hébergements</a></li>
+            <li><a href="#Hebergements">Hébergements</a></li>
             <li><a href="#Acivites">Activités</a></li>
           </ul>
         </nav>
@@ -43,54 +43,59 @@
 
       <main>
         <div class="dream-vacation-search">
-          <section class="find-hebergements">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <div class="head-line">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
-          </section>
+          </div>
 
-          <section class="search-bar">
+          <div class="search-bar">
             <span class="icon-location-dot"
               ><i class="fa-solid fa-location-dot"></i>
             </span>
-
-            <form id="form">
-              <input type="text" placeholder="Votre destination ..." />
-              <button>Rechercher</button>
+            <form class="form">
+              <input
+                type="text"
+                placeholder="Votre destination ..."
+                name="search"
+              />
             </form>
-          </section>
+            <button type="submit" class="localisation">Rechercher</button>
+          </div>
 
-          <section class="location-filters">
-            <h2>Filtres</h2>
+          <div class="location-filters">
+            <h2 id="filters">Filtres</h2>
             <div class="content-filter">
               <span class="icon-filter"
-                ><i class="fa-solid fa-money-bill-wave"></i>
+                ><i class="fa-solid fa-money-bill-wave icon-blue"></i>
               </span>
               <p>Économique</p>
             </div>
             <div class="content-filter">
               <span class="icon-filter"
-                ><i class="fa-solid fa-person"></i>
+                ><i class="fa-solid fa-person icon-blue"></i>
               </span>
               <p>Familial</p>
             </div>
             <div class="content-filter">
               <span class="icon-filter"
-                ><i class="fa-solid fa-heart"></i>
+                ><i class="fa-solid fa-heart icon-blue"></i>
               </span>
               <p>Romantique</p>
             </div>
             <div class="content-filter">
-              <span class="icon-filter"><i class="fa-solid fa-fire"></i> </span>
+              <span class="icon-filter"
+                ><i class="fa-solid fa-fire icon-blue"></i>
+              </span>
               <p>Nos pépites</p>
             </div>
-          </section>
+          </div>
 
-          <section class="info-bar">
+          <div class="info-bar">
             <span class="icon-info"
               ><i class="fa-solid fa-circle-info"></i>
             </span>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </section>
+          </div>
         </div>
 
         <div class="hebergements-and-populaires">

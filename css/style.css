@@ -1,10 +1,47 @@
-/****** General ***********/
+/*********** Reset ***********/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*********** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 :root {
-    --main-color: #0065FC;
+    /** --main-color: #0065FC; **/
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
@@ -23,6 +60,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: 0 25px;
 }
 
 a {
@@ -58,10 +96,196 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hearder ***********/
-.logo {}
+/*********** Header - Logo ***********/
+header {
 
-/****** Hebergements And Populaires ***********/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+}
+
+.logo {
+    width: 61px;
+    height: 19px;
+}
+
+/*********** Header - Menu  ***********/
+.menu {
+    height: 100%;
+
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul,
+.menu li,
+.menu a {
+    height: 100%;
+}
+
+.menu li {
+    margin-right: 60px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu li:hover {
+    color: #0465fc;
+}
+
+.menu li:hover::before {
+    content: '';
+    /* Ajouter un contenu vide pour créer un pseudo-élément */
+    display: block;
+    /* Rendre le pseudo-élément un bloc pour lui permettre d'avoir une hauteur */
+    width: 100%;
+    /* Largeur du pseudo-élément, par défaut à 100% de la largeur de l'élément parent */
+    border-top: 2px solid;
+    /* Largeur et style du bord supérieur initial */
+    border-top-color: #0465fc;
+    position: absolute;
+}
+
+.menu a {
+    padding: 25px 0;
+}
+
+/*********** Content - Dream vacation ***********/
+h2 {
+    font-weight: 700;
+}
+
+.head-line {
+    line-height: 30px;
+    margin: 30px 0;
+
+
+}
+
+/*********** Content - Search-bar ***********/
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+
+
+}
+
+.icon-location-dot {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 59px;
+    border-radius: 15px 0 0 15px;
+}
+
+i.fa-solid.fa-location-dot {
+    width: 14px;
+    height: 18px;
+}
+
+/* Style the search field */
+form.form input[type=text] {
+    padding: 18px;
+    font-size: 18px;
+    border: 1px solid #f2f2f2;
+    float: left;
+    font-weight: 700;
+    outline: 0 !important;
+
+}
+
+/* Style the submit button */
+.localisation {
+    float: left;
+    padding: 18px;
+    background: #0465fc;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #0465fc;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    font-weight: 700
+}
+
+/* Clear floats */
+form.form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*********** Content - Location Filters ***********/
+
+.location-filters {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+h2#filters {
+    padding: 0 10px 0 0;
+}
+
+.content-filter {
+    display: flex;
+    border: 3px solid #d9d9d9;
+    border-radius: 44px;
+    margin: 5px;
+    padding: 16px;
+}
+
+.content-filter:hover {
+    background-color: #deebfe;
+    cursor: default;
+}
+
+span.icon-filter {
+    padding: 0 10px 0 10px;
+}
+
+.icon-blue {
+    color: #0465fc;
+}
+
+/*********** Content - Info bar ***********/
+
+.info-bar {
+    display: flex;
+    margin: 30px 0;
+
+}
+
+span.icon-info {
+    padding: 0 10px 0 0;
+
+}
+
+.icon-info {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.icon-info i {
+    color: white;
+    background-color: #0465fc;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+}
+
+
+/*********** Content - Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
