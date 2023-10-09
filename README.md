@@ -5,7 +5,8 @@ Vous avez trouvé votre premier stage en tant que développeur web chez Booki, u
 
 Un nouveau design basé sur les principes du Material Design vient d’être réalisé par Loïc, designer UI.
 
-![Maquette Desktop](https://github.com/mhihmi/OC_P2_Booki/blob/master/images/Desktop_maquette.png)
+![Maquette Desktop](https://github.com/thealamenthed/p2/assets/90263288/fdb0214d-ba06-494a-9d99-72cbebde80ff)
+
 
 Avant de valider définitivement le design, l’entreprise a décidé de réaliser un prototype. Vous êtes chargé de créer ce prototype en intégrant la maquette en HTML et CSS.
 
