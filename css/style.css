@@ -162,7 +162,8 @@ h2 {
 
 .head-line {
     line-height: 30px;
-    margin-top: 30px;
+    margin: 25px 0;
+
 
 }
 
@@ -171,7 +172,8 @@ h2 {
 .search-bar {
     display: flex;
     align-items: center;
-    height: 135px;
+    margin: 25px 0;
+
 
 }
 
@@ -227,6 +229,8 @@ form.form::after {
 .location-filters {
     display: flex;
     align-items: center;
+    margin: 25px 0;
+
 }
 
 h2#filters {
@@ -243,6 +247,7 @@ h2#filters {
 
 .content-filter:hover {
     background-color: #deebfe;
+    cursor: default;
 }
 
 span.icon-filter {
@@ -252,6 +257,33 @@ span.icon-filter {
 .icon-blue {
     color: #0465fc;
 }
+
+/*********** Content - Info bar ***********/
+
+.info-bar {
+    display: flex;
+    margin: 25px 0;
+
+}
+
+span.icon-info {
+    padding: 0 10px 0 0;
+
+}
+
+.icon-info {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.icon-info i {
+    color: white;
+    background-color: #0465fc;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+}
+
 
 /*********** Content - Hebergements And Populaires ***********/
 .hebergements-and-populaires {
