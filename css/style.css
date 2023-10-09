@@ -222,6 +222,36 @@ form.form::after {
     display: table;
 }
 
+/*********** Content - Location Filters ***********/
+
+.location-filters {
+    display: flex;
+    align-items: center;
+}
+
+h2#filters {
+    padding: 0 10px 0 0;
+}
+
+.content-filter {
+    display: flex;
+    border: 3px solid #d9d9d9;
+    border-radius: 44px;
+    margin: 5px;
+    padding: 16px;
+}
+
+.content-filter:hover {
+    background-color: #deebfe;
+}
+
+span.icon-filter {
+    padding: 0 10px 0 10px;
+}
+
+.icon-blue {
+    color: #0465fc;
+}
 
 /*********** Content - Hebergements And Populaires ***********/
 .hebergements-and-populaires {
