@@ -460,6 +460,42 @@ span.icon-info {
     padding-left: 15px;
 }
 
+
+/* FOOTER */
+
+.contener-footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 100px;
+
+
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.bloc {
+    width: 33%;
+
+}
+
+.bloc,
+.list {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
