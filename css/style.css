@@ -2,6 +2,8 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
+
 }
 
 *,
@@ -297,6 +299,8 @@ span.icon-info {
 }
 
 /****** Hebergements ***********/
+
+
 .hebergements {
     width: 65%;
 }
@@ -416,6 +420,7 @@ span.icon-info {
 
 
 /* Content - Activities*/
+
 
 .activities {
     padding: 30px;
