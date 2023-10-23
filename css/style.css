@@ -55,6 +55,7 @@ img {
 body {
     display: flex;
     justify-content: center;
+
 }
 
 .main-container {
@@ -62,7 +63,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    margin: 0 25px;
+    /* margin: 0 25px; */
 }
 
 a {
@@ -181,7 +182,7 @@ h2 {
     display: flex;
     align-items: center;
     padding: 20px;
-    height: 59px;
+    height: 49px;
     border-radius: 15px 0 0 15px;
 }
 
@@ -198,13 +199,14 @@ form.form input[type=text] {
     float: left;
     font-weight: 700;
     outline: 0 !important;
+    height: 49px;
 
 }
 
 /* Style the submit button */
 .localisation {
     float: left;
-    padding: 18px;
+    padding: 13px;
     background: #0465fc;
     color: white;
     font-size: 18px;
@@ -213,7 +215,8 @@ form.form input[type=text] {
     /* Prevent double borders */
     cursor: pointer;
     border-radius: 0 15px 15px 0;
-    font-weight: 700
+    font-weight: 700;
+    height: 49px;
 }
 
 /* Clear floats */
@@ -241,7 +244,10 @@ h2#filters {
     border: 3px solid #d9d9d9;
     border-radius: 44px;
     margin: 5px;
-    padding: 16px;
+    height: 50px;
+    width: 173px;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-filter:hover {
@@ -313,19 +319,20 @@ span.icon-info {
 }
 
 .hebergements-cards {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    flex-direction: row;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
 }
+
+
 
 .hebergements-cards .card {
     display: flex;
     margin-top: 33px;
     flex-direction: column;
     width: 250px;
-    height: 200px;
+    height: 207px;
 }
 
 .hebergements-cards img {
@@ -424,6 +431,7 @@ span.icon-info {
 
 .activities {
     padding: 30px;
+
 }
 
 .activities h2 {
@@ -431,38 +439,49 @@ span.icon-info {
 }
 
 .activities-cards {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     margin-top: 33px;
+
 }
 
 .activities-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
     height: 100%;
 }
 
 .activites-img {
     border-radius: 20px 20px 0 0;
     max-width: 100%;
-    height: 87%;
+    height: 89%;
+
 }
 
 .activites-img-portrait {
     border-radius: 20px 20px 0 0;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: 17%;
+
+
 }
 
 .activites-card {
-    height: 439px;
-    width: 300px;
+
+    width: 100%;
     padding: 0px;
+
 }
 
 .activites-card .card-content {
     padding-left: 15px;
+    background-color: white;
+    padding-bottom: 28px;
+    border-radius: 0 0 20px 20px;
+
+
 }
 
 
@@ -474,19 +493,15 @@ span.icon-info {
     justify-content: space-between;
     padding: 20px;
     margin-top: 100px;
-
-
 }
 
 h3 {
     font-size: 18px;
     font-weight: 700;
-
 }
 
 .bloc {
     width: 33%;
-
 }
 
 .bloc,
@@ -496,10 +511,6 @@ h3 {
     flex-direction: column;
 
 }
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -536,9 +547,13 @@ h3 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-card {}
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
+    .activites-card {}
 }
