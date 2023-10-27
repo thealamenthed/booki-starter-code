@@ -63,6 +63,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    min-width: 320px;
     /* margin: 0 25px; */
 }
 
@@ -237,6 +238,10 @@ form.form::after {
 
 }
 
+.container-all-filtres {
+    display: flex;
+}
+
 h2#filters {
     padding: 0 10px 0 0;
 }
@@ -329,7 +334,6 @@ span.icon-info {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
-    overflow: auto;
 }
 
 
@@ -531,7 +535,10 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
 
+    .container-all-filtres {
+        display: flex;
     }
 
     .content-filter {
@@ -572,10 +579,6 @@ h3 {
 
 
 
-
-
-
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -613,6 +616,40 @@ h3 {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    /* ... */
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-height: 115px;
+        margin-top: 50px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
     .activites-card {}
+
+
+
+
+    /* FILTERS */
+
+    .container-all-filtres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* HEBERGEMENTS */
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
 }
