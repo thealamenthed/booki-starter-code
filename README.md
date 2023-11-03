@@ -32,36 +32,41 @@ des liens. Ils doivent mener respectivement vers la section
 
 ## Spécifications techniques
 
-* Deux maquettes ont été réalisées : l’une desktop et l’autre mobile. Le site devra être également adapté aux formats tablette. Pour les tablettes, nous sommes libres de faire les adaptations nécessaires. Il est important qu’aucun élément ne soit coupé, et que le texte ait une taille suffisante.
-* Concernant les breakpoints, nous avons convenu avec le client
-d’utiliser 992 px et 768 px.
-992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
-tout ce qui est en dessous de 768 pour les téléphones portables.
-* Il faut d’abord réaliser l’intégration pour les ordinateurs (autrement
-dit, en desktop first), puis les tablettes et enfin les téléphones.
-L’utilisation des Media Queries nous permettra de réaliser
-l’intégration pour les différents supports.
-* Plusieurs formats et tailles d’images ont été exportés. Il faudra choisir
-le format le plus adapté par rapport à la résolution et au temps de
-chargement.
-* Les icônes proviennent de la bibliothèque Font Awesome. Nous
-pouvons passer par un CDN pour faciliter le chargement des icônes.
-* Les couleurs de la charte sont le bleu (#0065FC), une version plus
-claire de ce bleu (#DEEBFF) et le gris pour le fond (#F2F2F2).
-* La police du site est Raleway. Nous pouvons passer par Google Font
-pour importer facilement cette police dans le code :
-[GoogleFont Raleway](https://fonts.google.com/specimen/Raleway).
-* Il est important d’utiliser les pixels et les pourcentages plutôt que les
-REM et les EM. Le client préfère cette solution pour des contraintes
-techniques.
-* Il est important d’utiliser Flexbox plutôt que Grid. Notre client est
-plus à l’aise avec cette solution.
-* Aucun framework CSS (type BootStrap ou Tailwind CSS) ou
-préprocesseur CSS (type Sass ou Less) ne doit être utilisé.
-* Il est important d’utiliser des balises sémantiques (type main,
-header, nav, etc.).
-* Le code doit être valide aux validateurs W3C HTML et CSS.
-* La maquette doit être compatible avec les dernières versions de
-Google Chrome et de Mozilla Firefox. Il faudra tester le prototype sur
-ces deux navigateurs.
-* Le code ne doit pas être versionné avec Git.
+* Trois maquettes ont été réalisées : desktop, tablette et mobile.
+* Breakpoints : Nous avons convenu avec le designer UI d’utiliser 1024 px et 768 px : >1024 px pour les écrans d’ordinateurs ; >=768 px pour les tablettes ; et tout ce qui est en dessous de 768 pour les téléphones portables.
+Largeur min - max
+Pour éviter d’étirer la page web sur la largeur de façon excessive, il va falloir déterminer
+une largeur maximum de 1440 px. Au-delà, une marge blanche doit apparaître sur les
+côtés et le contenu doit se limiter à 1440 px de large.
+La largeur minimum est fixée à 320 px, en-deçà de cette largeur, le comportement n’est
+pas garanti.
+* Il faut d’abord réaliser l’intégration pour les ordinateurs (autrement dit, en desktop first),
+puis les tablettes et enfin les téléphones. L’utilisation des Media Queries nous permettra
+de réaliser l’intégration pour les différents supports.
+* Les icônes proviennent de la bibliothèque Font Awesome.
+* Les couleurs de la charte sont le bleu (#0065FC), le bleu clair (#DEEBFF) et le gris pour le
+fond (#F2F2F2).
+* La police du site est Raleway. Nous pouvons passer par Google Fonts pour importer
+facilement cette police dans le code : https://fonts.google.com/specimen/Raleway
+Mise en page Il est recommandé d'utiliser Flexbox.
+* Il est important d’utiliser des balises sémantiques, au minimum “header”, “nav”, “h1-h2-h3”, “main”, “section”, “article” et “footer”.
+
+
+Aucun IDE ou éditeur de code particulier n’est imposé pour le développement.
+Le code doit être valide aux validateurs W3C HTML et CSS.
+Le code HTML ne doit pas contenir de propriété CSS.
+Lors du passage du desktop au mobile et à la tablette, ne pas dupliquer le code
+HTML (exception faite dans le formulaire avec le mot “Rechercher” et l’icône de la
+loupe).
+
+Privilégier l’utilisation des classes CSS pour cibler un élément, plutôt que d’utiliser
+le nom de l’élément lui-même.
+Ne pas dupliquer des classes CSS inutilement. Exemple : si 4 éléments sont
+identiques du point de vue de la mise en forme, alors utiliser une seule et même
+classe CSS, et non pas 4.
+
+* Compatibilité navigateurs : La maquette doit être compatible avec les dernières versions de Google Chrome et de
+Mozilla Firefox. Il faudra tester la page web sur ces deux navigateurs.
+* Restrictions : Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass
+ou Less) ne doit être utilisé.
+Aucun autre langage ne doit être utilisé (comme JavaScript, par exemple).
