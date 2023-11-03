@@ -61,10 +61,10 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     box-sizing: border-box;
     min-width: 320px;
-    /* margin: 0 25px; */
+    /* margin: 0 30px; */
 }
 
 a {
@@ -115,7 +115,7 @@ header {
 
 /*********** Header - Menu  ***********/
 .menu {
-    height: 100%;
+    width: 100%;
 
 }
 
@@ -225,6 +225,10 @@ form.form::after {
     content: "";
     clear: both;
     display: table;
+}
+
+button.localisation-mobile {
+    display: none;
 }
 
 /*********** Content - Location Filters ***********/
@@ -337,12 +341,15 @@ span.icon-info {
 }
 
 
+.a-card {
+    width: 100%;
+}
 
 .hebergements-cards .card {
     display: flex;
     margin-top: 33px;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     height: 207px;
 }
 
@@ -616,6 +623,11 @@ h3 {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .main-container {
+
+        padding: 0
+    }
+
     /* HEADER */
 
     header {
@@ -631,21 +643,56 @@ h3 {
         margin-bottom: 20px;
     }
 
-    .activites-card {}
+    .menu {
+        width: 100%;
+    }
 
+    .menu ul {
+        display: flex;
+        width: 100%;
+    }
 
-
+    .menu li {
+        width: 50%;
+    }
 
     /* SEARCH BAR */
 
-    .search-bar {
-        display: none;
-    }
 
-    .search-bar-mobile {
+
+    /* .search-bar-mobile {
         display: flex;
         align-items: center;
         margin: 30px 0;
+    } */
+
+    .localisation {
+        display: none;
+    }
+
+    button.localisation-mobile {
+        display: flex;
+        border: none;
+        background: white;
+        padding: 0;
+    }
+
+
+    .loupe {
+
+        display: flex;
+        align-items: center;
+        float: left;
+        padding: 13px;
+        background: #0465fc;
+        color: white;
+        font-size: 18px;
+        border: 2px solid #0465fc;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+        border-radius: 0 15px 15px 0;
+
     }
 
 
@@ -663,6 +710,25 @@ h3 {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section#Hebergements {
+        background-color: white;
+
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
     }
 
 }
