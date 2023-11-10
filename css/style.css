@@ -103,7 +103,6 @@ a {
 header {
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 79px;
 }
@@ -116,12 +115,15 @@ header {
 /*********** Header - Menu  ***********/
 .menu {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .menu ul {
     display: flex;
     align-items: center;
+    width: auto
 }
 
 .menu ul,
@@ -131,7 +133,7 @@ header {
 }
 
 .menu li {
-    margin-right: 60px;
+    margin-right: 20px;
     display: flex;
     box-sizing: border-box;
     position: relative;
@@ -630,31 +632,46 @@ h3 {
 
     /* HEADER */
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        min-height: 115px;
-        margin-top: 50px;
-    }
 
-    .logo {
-        margin-bottom: 20px;
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     .menu {
         width: 100%;
+        justify-content: center;
     }
+
+
+    .menu li {
+        margin-right: 10px;
+    }
+
 
     .menu ul {
         display: flex;
+        align-items: center;
         width: 100%;
+        justify-content: space-between;
     }
 
-    .menu li {
-        width: 50%;
+
+    .menu li:hover::before {
+
+        border-bottom: 2px solid;
+        border-top: 0;
+        border-bottom-color: #0465fc;
+        position: absolute;
+        bottom: 0;
+
     }
+
+
+
+
+
 
     /* SEARCH BAR */
 
@@ -731,4 +748,29 @@ h3 {
         border-radius: 0px;
     }
 
+    section.populaires {
+        min-width: 406px;
+
+    }
+
+    /* POPULAIRES */
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    /* ACTIVITIES */
+
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+
+    .contener-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
