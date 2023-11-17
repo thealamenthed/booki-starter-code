@@ -259,13 +259,15 @@ h2#filters {
 
 .content-filter {
     display: flex;
-    border: 3px solid #d9d9d9;
-    border-radius: 44px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
     margin: 5px;
     height: 50px;
     width: 173px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .content-filter:hover {
@@ -279,6 +281,7 @@ span.icon-filter {
 
 .icon-blue {
     color: #0465fc;
+    font-size: 22px;
 }
 
 /*********** Content - Info bar ***********/
@@ -390,6 +393,12 @@ span.icon-info {
 
 
 /****** Populaires ***********/
+
+i.fa-solid.fa-chart-line {
+    font-size: 18px;
+    height: 16px;
+}
+
 .populaires {
     width: 32%;
 }
@@ -497,7 +506,7 @@ span.icon-info {
 }
 
 .activites-card .card-content {
-    padding-left: 15px;
+    padding-left: 19px;
     background-color: white;
     padding-bottom: 28px;
     border-radius: 0 0 20px 20px;
@@ -621,18 +630,23 @@ h3 {
         font-size: 13px;
     }
 
-    .activites-card {}
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .location-filters {
+        width: 100%;
+    }
 
+    .content-filter {
+        width: 162px;
+    }
 
     .main-container {
 
         padding: 0;
-        min-width: 406px;
+        min-width: 320px;
     }
 
     /* HEADER */
@@ -671,7 +685,7 @@ h3 {
 
 
     li {
-        width: 55%;
+        width: 100%;
 
     }
 
@@ -712,6 +726,12 @@ h3 {
         position: relative;
         border-radius: 15px;
         border: 1px #F2F2F2 solid;
+        width: 100%;
+    }
+
+
+    form.form input[type=text] {
+        border: none;
     }
 
 
@@ -725,7 +745,7 @@ h3 {
         border: 1px #0065FC solid;
         position: absolute;
         top: 0px;
-        left: 259px;
+        right: 0px;
         /* Prevent double borders */
         cursor: pointer;
         border-radius: 15px;
@@ -751,9 +771,6 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-
-
-    /* FILTERS */
 
     .dream-vacation-search {
         display: flex;
@@ -790,8 +807,6 @@ h3 {
         border-radius: 0px;
     }
 
-    section.populaires {}
-
     /* POPULAIRES */
 
     .populaires-cards a {
@@ -809,9 +824,8 @@ h3 {
         flex-direction: column;
     }
 
-    .card-title {
-
-        margin-bottom: 15px;
+    h3.card-title {
+        padding-top: 10px;
     }
 
     .activities-cards-link {
@@ -819,10 +833,13 @@ h3 {
     }
 
 
+    img.activites-img {
+        height: 141px;
+    }
 
     img.activites-img-portrait {
         width: 100%;
-        height: 196px;
+        height: 141px;
     }
 
     /* FOOTER */
