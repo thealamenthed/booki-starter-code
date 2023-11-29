@@ -63,7 +63,6 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    min-width: 320px;
 }
 
 a {
@@ -250,7 +249,9 @@ h2#filters {
 
 .filter-container {
     display: flex;
+    justify-content: space-evenly;
 }
+
 
 .content-filter {
     display: flex;
@@ -538,7 +539,7 @@ h3 {
     .location-filters {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .container-all-filtres {
@@ -552,6 +553,7 @@ h3 {
 
     .filter-container {
         margin-top: 15px;
+        gap: 8px;
     }
 
     /* Content - Activities*/
@@ -626,12 +628,27 @@ h3 {
 
     .content-filter {
         width: 162px;
+        font-size: 14px;
+        position: relative;
+        margin-right: 0px;
+    }
+
+    span.icon-filter {
+        position: absolute;
+        left: 5px;
+    }
+
+    .icon-blue {
+        font-size: 22px;
+    }
+
+    span.filter-title {
+        margin-left: 29px;
     }
 
     .main-container {
 
         padding: 0;
-        min-width: 320px;
     }
 
     /* HEADER */
@@ -751,6 +768,7 @@ h3 {
     .container-all-filtres {
         display: flex;
         flex-direction: column;
+        align-items: stretch;
     }
 
     .dream-vacation-search {
